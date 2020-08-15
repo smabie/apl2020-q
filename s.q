@@ -14,3 +14,7 @@ p5:{x _ til 1+y}
 p6:{y(where v),y(where not v:x=y)}
 
 p7:{sum[v]=sum(v:0b vs x)&0b vs y}
+
+p8:{n:count v:0<=1 _ deltas 10 vs x; (v~n#01b)|v~n#10b}
+
+p9:{n:x?max x; u:n#x; d:n _ x; all(all')(1_(>=':)u; 1_(<=':)d)}
